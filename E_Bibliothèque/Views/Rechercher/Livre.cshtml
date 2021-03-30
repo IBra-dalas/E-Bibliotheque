@@ -1,0 +1,38 @@
+﻿@model E_Bibliothèque.ViewModels.RechercherViewModel
+
+@{
+    ViewBag.Title = "Chercher un Livre";
+}
+<br /><p>Effectuer une recherche par livre ou auteur</p><br />
+
+@using (Html.BeginForm("Livre", "Rechercher", FormMethod.Get))
+{
+    @Html.TextBoxFor(m => m.Recherche);
+
+    <input type="submit" value="Rechercher" />
+    <br /><br />
+    <p>Resultat de la recherche</p>
+    if (Model.ListeDesLivres.Count == 0)
+    {
+        <br /><p>Il n'existe pas de livre qui correspond à votre recherche</p>
+    }
+    else
+    {
+        <table>
+            <tr>
+                <th>Titre</th>
+                <th>    Info</th>
+                <th>Auteur</th>
+            </tr>
+            @foreach (var livre in Model.ListeDesLivres)
+            {
+                <tr>
+                    <td>@livre.TitreLivre</td>
+                    <td></td>
+                    <td>@livre.UnAuteur.NomAuteur</td>
+                </tr>
+            }
+        </table>
+        @*<a href="~/Views/Rechercher/Livre">Livre</a>*@
+    }
+}

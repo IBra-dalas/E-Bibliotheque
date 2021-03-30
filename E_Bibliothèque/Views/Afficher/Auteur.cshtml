@@ -1,0 +1,27 @@
+﻿@model List<E_Bibliothèque.Models.Livre>
+
+
+
+table
+{
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px black;
+}
+
+<table>
+    <tr>
+        <th>Titre</th>
+        <th>Date Parution</th>
+        <th>Auteur</th>
+    </tr>
+    @foreach (var livre in Model)
+    {
+        <tr>
+            <td>@livre.IdLivre</td>
+            <td>@livre.DateParition</td>
+           
+        </tr>
+    }
+</table>

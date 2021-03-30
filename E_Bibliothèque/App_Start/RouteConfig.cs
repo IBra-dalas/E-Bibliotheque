@@ -16,8 +16,23 @@ namespace E_Bibliothèque
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Accueil", action = "Afficher", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "",
+                url: "{controller}/{action}/{id}",
+                 defaults: new { controller = "Rechercher", action = "Livre", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "",
+                url: "{controller}/{action}/{id}",
+                 defaults: new { controller = "CreateLivre", action = "Ajouter", id = UrlParameter.Optional }
             );
         }
+
     }
+
+  
 }

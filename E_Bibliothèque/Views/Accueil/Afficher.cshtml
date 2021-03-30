@@ -1,0 +1,19 @@
+﻿@model E_Bibliothèque.ViewModels.AccueilViewModels
+
+<title>Accueil</title>
+<table>
+    <tr>
+        <th>Tittre</th>
+        <th>Auteur</th>
+    </tr>
+    @{
+        foreach (var livre in Model.ListeDesLivres)
+        {
+            <tr>
+                <td>@livre.TitreLivre</td>
+               <td>@livre.UnAuteur.NomAuteur</td>
+            </tr>
+        }
+    }
+</table>
+<a href="@Url.Action("Afficher", "Accueil")">Livre</a>

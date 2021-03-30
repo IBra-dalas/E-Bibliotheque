@@ -7,7 +7,7 @@ using System.Web;
 
 namespace E_Bibliothèque.Models
 {
-    public class Donnees
+    public class Donnees : BddContext
     {
         public string StackOverflowException(string messages)
         {

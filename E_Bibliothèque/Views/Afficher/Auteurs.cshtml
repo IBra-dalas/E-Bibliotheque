@@ -1,0 +1,26 @@
+﻿@model E_Bibliothèque.ViewModels.AfficherViewModels
+
+
+<tittle>
+    Auteurs
+</tittle>
+<table>
+    <tr>
+        <th>Index</th>
+        <th> ====> </th>
+        <th>Auteur</th>
+    </tr>
+
+    @{
+        foreach (var auteur in Model.ListAuteurs)
+        {
+            <tr>
+                <td>@auteur.IdAuteur</td>
+                <td></td>
+                <td>@auteur.NomAuteur</td>
+            </tr>
+        }
+    }
+
+</table>
+

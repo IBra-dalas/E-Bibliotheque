@@ -283,4 +283,3 @@ C:\Users\Dreamer\Source\Repos\E-Bibliotheque\E_Bibliothèque\obj\Debug\E_Bibliot
 C:\Users\Dreamer\Source\Repos\E-Bibliotheque\E_Bibliothèque\obj\Debug\E_Bibliothèque.csproj.CoreCompileInputs.cache
 C:\Users\Dreamer\Source\Repos\E-Bibliotheque\E_Bibliothèque\obj\Debug\E_Bibliothèque.dll
 C:\Users\Dreamer\Source\Repos\E-Bibliotheque\E_Bibliothèque\obj\Debug\E_Bibliothèque.pdb
-C:\Users\Dreamer\Source\Repos\E-Bibliotheque\E_Bibliothèque\obj\Debug\E_Bibliothèque.csproj.CopyComplete
